@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n1;
+    int n2;
+    cout << "Write 1st No: ";
+    cin >> n1;
+    cout << "Write 2nd No: ";
+    cin >> n2;
+    int large, small;
+    if (n1 > n2) {
+        large = n1;
+        small = n2;
+    } else {
+        large = n2;
+        small = n1;
+    }
+
+    {
+
+        for (; small < large; large--) {
+            if (large % 3 == 0) {
+                if (large % 2 == 0) {
+                    cout << large << " ";
+                }
+
+            }
+        }
+    }
